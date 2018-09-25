@@ -1,0 +1,54 @@
+debug: true
+logging:
+    level:
+        com:
+            example:
+                demo:
+                    dao: debug
+        org:
+            springframework:
+                web: info
+        root: info
+mybatis:
+    mapperLocations: classpath:mapper/*.xml
+server:
+    tomcat:
+        uri-encoding: UTF-8
+spring:
+    datasource:
+        driver-class-name: oracle.jdbc.driver.OracleDriver
+        initialSize: 5
+        maxActive: 20
+        maxPoolPreparedStatementPerConnectionSize: 20
+        maxWait: 10000
+        minIdle: 5
+        password: password
+        poolPreparedStatements: true
+        testWhileIdle: true
+        timeBetweenEvictionRunsMillis: 60000
+        type: com.alibaba.druid.pool.DruidDataSource
+        url: jdbc:oracle:thin:@test.oracle1:1521:orcl
+        username: HCZZPPolSituInfo
+        validationQuery: SELECT 'x' from dual
+    http:
+        encoding:
+            charset: UTF-8
+            enabled: true
+            force: true
+    message:
+        encoding: UTF-8
+    redis:
+        database: 0
+        host: 127.0.0.1
+        pool:
+            max-active: 100
+            max-idle: 10
+            max-wait: -100000
+            min-idle: 0
+        port: 6379
+        timeout: 0
+swagger:
+    basePackage: com.example.demo.controller
+    description: 服务端接口
+    title: 测试服务
+    version: 版本V1.0
