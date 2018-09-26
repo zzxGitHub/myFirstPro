@@ -42,6 +42,6 @@ public class DemoController {
 	@PostMapping(value = "/file")
 	@ApiOperation("Upload files.")
 	public String addFile(@RequestParam("file") MultipartFile file) throws IOException {
-		return "success";
+		return "successss";
 	}
 }
