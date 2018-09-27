@@ -11,21 +11,21 @@ public class WebServiceImpl implements WebService{
 
 	@Override
 	public String getInfo() {
-		/*String url = "";
+		String url = "http://localhost:8080/services/TestService?wsdl";
 		JaxWsDynamicClientFactory dcf = JaxWsDynamicClientFactory.newInstance();
 		Client client = dcf.createClient(url);
 		// 需要密码的情况需要加上用户名和密码
-		client.getOutInterceptors().add(new ClientLoginInterceptor(userNmae, pwd));
+		//client.getOutInterceptors().add(new ClientLoginInterceptor(userNmae, pwd));
 		Object[] objects = new Object[0];
 		try {
 			// invoke("方法名",参数1,参数2,参数3....);
-			objects = client.invoke("bph_data_exchange", param, xml);
+			objects = client.invoke("sendMessage","1");
 			String str = objects[0].toString();
 			System.out.println(str);
-			return "success";
+			return str;
 		} catch (Exception e) {
 			e.printStackTrace();
-		}*/
-		return null;
+		}
+		return "success";
 	}
 }
