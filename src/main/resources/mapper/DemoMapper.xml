@@ -11,4 +11,16 @@
 	<select id="findList" resultType="com.example.demo.entity.Demo">
 		select t.id,t.name from STUDENT t
 	</select>
+	
+	<select id="findDemo" resultType="java.lang.Integer">
+		select count(*) from STUDENT t where t.id = #{id}
+	</select>
+	
+	<update id="update">
+		update STUDENT t set t.name = #{name} where t.id = #{id} 
+	</update>
+	
+	<insert id="insert">
+		insert into STUDENT(id,name) values(#{id},#{name}) 
+	</insert>
 </mapper>

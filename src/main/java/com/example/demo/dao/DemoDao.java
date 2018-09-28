@@ -12,4 +12,10 @@ public interface DemoDao {
 
 	List<Demo> findList();
 
+	int findDemo(Integer id);
+
+	void update(Demo demo);
+
+	void insert(Demo demo);
+
 }

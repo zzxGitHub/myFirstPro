@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.example.demo.controller.WebServiceController;
+import com.example.demo.service.WebServiceInterface;
 
 @Configuration
 public class CxfConfig {
@@ -15,7 +15,7 @@ public class CxfConfig {
     private Bus bus;
 
     @Autowired
-    private WebServiceController testService;
+    private WebServiceInterface testService;
 
     @Bean
     public Endpoint endpoint(){
