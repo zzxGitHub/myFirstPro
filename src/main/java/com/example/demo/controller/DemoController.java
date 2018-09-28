@@ -1,7 +1,5 @@
 package com.example.demo.controller;
 
-import java.io.IOException;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -39,9 +37,9 @@ public class DemoController {
 		return demoService.getInfoList(pageIndex,pageSize);
 	}
 	
-	@PostMapping(value = "/file")
-	@ApiOperation("Upload files.")
-	public String addFile(@RequestParam("file") MultipartFile file) throws IOException {
-		return "successss";
+	@PostMapping(value = "/importFile")
+	@ApiOperation("Upload files.上传excel,导入信息进数据库")
+	public String addFile(@RequestParam("file") MultipartFile file) throws Exception {
+		return demoService.importInfo(file);
 	}
 }
