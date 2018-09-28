@@ -101,6 +101,11 @@
 			<artifactId>cxf-spring-boot-starter-jaxws</artifactId>
 			<version>3.1.11</version>
 		</dependency>
+		<dependency>
+    		<groupId>axis</groupId>
+    		<artifactId>axis</artifactId>
+    		<version>1.4</version>
+		</dependency>
 	</dependencies>
 
 	<build>
