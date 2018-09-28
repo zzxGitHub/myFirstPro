@@ -4,7 +4,7 @@ logging:
         com:
             example:
                 demo:
-                    dao: debug
+                    dao: info
         org:
             springframework:
                 web: info

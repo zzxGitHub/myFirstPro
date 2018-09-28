@@ -1,7 +1,6 @@
 package com.example.demo.utils;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Vector;
 
 import javax.xml.namespace.QName;
@@ -29,7 +28,7 @@ public class WebServiceAsmxUtils {
 			call.setSOAPActionURI(soapaction + methodName);
 			Vector v=(Vector)call.invoke(new Object[]{City});//调用方法并传递参数
 			for(int i=0;i<v.size();i++) {
-				System.out.println(v.get(i));
+				//System.out.println(v.get(i));
 				ar.add(v.get(i).toString());
 			}
 		}catch(Exception e) {

@@ -1,5 +1,6 @@
 package com.example.demo.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.cxf.endpoint.Client;
@@ -35,13 +36,14 @@ public class WebServiceImpl implements WebService{
 	/**
 	 * 调用远程webservice
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<String> getInfoRemote() {
 		String url = "http://www.webxml.com.cn/WebServices/WeatherWebService.asmx?wsdl";
 		String soapaction = "http://WebXml.com.cn/";
 		String methodName = "getSupportCity";
 		String paraName = "byProvinceName";
-		List<String> result = WebServiceAsmxUtils.webServiceUtils(url, soapaction, methodName, paraName);
+		ArrayList<String> result = WebServiceAsmxUtils.webServiceUtils(url, soapaction, methodName, paraName);
 		return result;
 	}
 }
