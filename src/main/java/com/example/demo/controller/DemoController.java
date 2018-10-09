@@ -31,6 +31,12 @@ public class DemoController {
 		return demoService.getInfo(id);
 	}
 	
+	@PostMapping("/demo/delete")
+	@ApiOperation(value="删除",notes="根据id删除学生信息")
+	public String delete(@RequestParam(value="id",required=true)Integer id) {
+		return demoService.deleteInfo(id);
+	}
+	
 	@GetMapping("/demo/list/{pageIndex}/{pageSize}")
 	@ApiOperation(value="分页列表查询",notes="列表分页查询")
 	public PageInfo<Demo> demo(@PathVariable Integer pageIndex,@PathVariable Integer pageSize) {

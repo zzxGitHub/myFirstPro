@@ -72,7 +72,6 @@ public class DemoServiceImpl implements DemoService{
 	@Transactional
 	@Override
 	public String importInfo(MultipartFile file) throws Exception {
-		boolean notNull = false;
 		List<Demo> userList = new ArrayList<Demo>();
 		String fileName = file.getOriginalFilename();
 		if (!fileName.matches("^.+\\.(?i)(xls)$") && !fileName.matches("^.+\\.(?i)(xlsx)$")) {
@@ -94,7 +93,6 @@ public class DemoServiceImpl implements DemoService{
 		}
 		Sheet sheet = wb.getSheetAt(0);//获取第一个表单
 		if(sheet!=null){
-            notNull = true;
         }
 		//循环获取数据
 		for (int r = 1; r <= sheet.getLastRowNum(); r++) {
@@ -133,6 +131,21 @@ public class DemoServiceImpl implements DemoService{
 			}else {
 				demoDao.insert(demo);
 			}
+		}
+		return "success";
+	}
+
+	@Override
+	public String deleteInfo(Integer id) {
+		//查询是否存在
+		int cnt = demoDao.findDemo(id);
+		if(cnt > 0) {
+			//从数据库中删除
+			demoDao.delete(id);
+			//删除缓存redis中的数据
+			redisTemplateDemo.delete(id.toString());
+		}else {
+			return "is not exist";
 		}
 		return "success";
 	}
