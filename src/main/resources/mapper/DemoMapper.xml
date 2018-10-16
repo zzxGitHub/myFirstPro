@@ -23,4 +23,8 @@
 	<insert id="insert">
 		insert into STUDENT(id,name) values(#{id},#{name}) 
 	</insert>
+	
+	<delete id="delete">
+		delete from STUDENT t where t.id = #{id}
+	</delete>
 </mapper>

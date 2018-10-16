@@ -13,4 +13,6 @@ public interface DemoService {
 
 	String importInfo(MultipartFile file) throws Exception;
 
+	String deleteInfo(Integer id);
+
 }

@@ -18,4 +18,6 @@ public interface DemoDao {
 
 	void insert(Demo demo);
 
+	void delete(@Param("id")Integer id);
+
 }
