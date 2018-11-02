@@ -113,6 +113,11 @@
       		<artifactId>poi-ooxml</artifactId>
       		<version>3.9</version>
 		</dependency>
+		<!-- mysql -->
+		<dependency>
+              <groupId>mysql</groupId>
+              <artifactId>mysql-connector-java</artifactId>
+        </dependency>
 	</dependencies>
 
 	<build>

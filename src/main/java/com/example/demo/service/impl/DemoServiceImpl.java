@@ -38,6 +38,8 @@ public class DemoServiceImpl implements DemoService{
 	
 	private static final Logger log = LoggerFactory.getLogger( DemoServiceImpl.class );
 
+	/**
+	 */
 	@Override
 	public Demo getInfo(String id) {
 		//测试从redis中获取数据
