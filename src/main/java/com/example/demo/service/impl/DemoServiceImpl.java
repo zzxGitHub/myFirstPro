@@ -1,9 +1,16 @@
 package com.example.demo.service.impl;
 
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
@@ -17,6 +24,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.dao.DemoDao;
@@ -24,6 +32,13 @@ import com.example.demo.entity.Demo;
 import com.example.demo.service.DemoService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+
+import cn.afterturn.easypoi.entity.vo.BigExcelConstants;
+import cn.afterturn.easypoi.entity.vo.NormalExcelConstants;
+import cn.afterturn.easypoi.excel.entity.ExportParams;
+import cn.afterturn.easypoi.excel.entity.enmus.ExcelType;
+import cn.afterturn.easypoi.handler.inter.IExcelExportServer;
+import cn.afterturn.easypoi.view.PoiBaseView;
 @Service
 public class DemoServiceImpl implements DemoService{
 	
@@ -37,6 +52,9 @@ public class DemoServiceImpl implements DemoService{
 	private RedisTemplate<String, Demo> redisTemplateDemo;
 	
 	private static final Logger log = LoggerFactory.getLogger( DemoServiceImpl.class );
+	
+	@Autowired
+	private ExportLoadDataImpl excelExportServer;
 
 	/**
 	 */
@@ -74,6 +92,7 @@ public class DemoServiceImpl implements DemoService{
 	@Transactional
 	@Override
 	public String importInfo(MultipartFile file) throws Exception {
+		return null;/*
 		List<Demo> userList = new ArrayList<Demo>();
 		String fileName = file.getOriginalFilename();
 		if (!fileName.matches("^.+\\.(?i)(xls)$") && !fileName.matches("^.+\\.(?i)(xlsx)$")) {
@@ -135,7 +154,7 @@ public class DemoServiceImpl implements DemoService{
 			}
 		}
 		return "success";
-	}
+	*/}
 
 	@Override
 	public String deleteInfo(Integer id) {
@@ -150,5 +169,33 @@ public class DemoServiceImpl implements DemoService{
 			return "is not exist";
 		}
 		return "success";
+	}
+
+	@Override
+	public void downExcelFile(HttpServletRequest request, HttpServletResponse response) {
+		/*ModelMap map = new ModelMap();
+		List<Demo> list = new ArrayList<Demo>();
+        for (int i = 0; i < 100; i++) {
+        	Demo client = new Demo();
+            client.setId(i);
+            client.setName("zzx"+ i);
+       
+            list.add(client);
+        }
+        ExportParams params = new ExportParams("2412312", "测试", ExcelType.XSSF);
+        params.setFreezeCol(2);
+        map.put(NormalExcelConstants.DATA_LIST, list);
+        map.put(NormalExcelConstants.CLASS, Demo.class);
+        map.put(NormalExcelConstants.PARAMS, params);
+        PoiBaseView.render(map, request, response, NormalExcelConstants.EASYPOI_EXCEL_VIEW);*/
+		ModelMap map = new ModelMap();
+		ExportParams params = new ExportParams("2412312", "测试", ExcelType.XSSF);
+		params.setFreezeCol(2);
+		map.put(BigExcelConstants.CLASS, Demo.class);
+		map.put(BigExcelConstants.PARAMS, params);
+		// 就是我们的查询参数,会带到接口中,供接口查询使用
+		map.put(BigExcelConstants.DATA_PARAMS, new HashMap<String, String>());
+		map.put(BigExcelConstants.DATA_INTER, excelExportServer);
+		PoiBaseView.render(map, request, response, BigExcelConstants.EASYPOI_BIG_EXCEL_VIEW);
 	}
 }

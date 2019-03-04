@@ -14,7 +14,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.16.RELEASE</version>
+		<version>1.5.15.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -108,16 +108,28 @@
     		<version>1.4</version>
 		</dependency>
 		<!-- poi包 -->
-		<dependency>
+		<!-- <dependency>
       		<groupId>org.apache.poi</groupId>
       		<artifactId>poi-ooxml</artifactId>
       		<version>3.9</version>
-		</dependency>
+		</dependency> -->
 		<!-- mysql -->
 		<dependency>
               <groupId>mysql</groupId>
               <artifactId>mysql-connector-java</artifactId>
         </dependency>
+        <!-- 消息 -->
+        <dependency>
+     		  <groupId>org.springframework.boot</groupId>
+     	      <artifactId>spring-boot-starter-amqp</artifactId>
+ 		</dependency>
+ 		<!-- easyPoi -->
+ 	    <dependency>
+			<groupId>cn.afterturn</groupId>
+			<artifactId>easypoi-spring-boot-starter</artifactId>
+			<version>4.0.0</version>
+		</dependency>
+		 
 	</dependencies>
 
 	<build>

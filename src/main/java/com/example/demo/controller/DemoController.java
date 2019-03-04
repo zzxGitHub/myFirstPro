@@ -1,6 +1,10 @@
 package com.example.demo.controller;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -9,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.example.demo.config.EsConfig;
 import com.example.demo.entity.Demo;
 import com.example.demo.service.DemoService;
 import com.github.pagehelper.PageInfo;
@@ -25,9 +30,13 @@ public class DemoController {
 	@Autowired
 	private DemoService demoService;
 	
+	@Autowired
+	private EsConfig esConfig;
+	
 	@GetMapping("/demo/{id}")
 	@ApiOperation(value="单个查询",notes="根据id获取学生信息")
 	public Demo demo(@PathVariable String id) {
+		System.out.println("---eskaiguan-----"+esConfig.isEsSwitch());
 		return demoService.getInfo(id);
 	}
 	
@@ -48,4 +57,12 @@ public class DemoController {
 	public String addFile(@RequestParam("file") MultipartFile file) throws Exception {
 		return demoService.importInfo(file);
 	}
+	
+	@GetMapping(value = "/downExcelFile")
+	@ApiOperation("easyPoi导出数据到excel")
+	public void downLoad(HttpServletRequest request,
+            HttpServletResponse response) {
+		demoService.downExcelFile(request,response);
+	}
+	
 }

@@ -2,10 +2,14 @@ package com.example.demo.entity;
 
 import java.io.Serializable;
 
+import cn.afterturn.easypoi.excel.annotation.Excel;
+
 public class Demo implements Serializable{
 	
 	private static final long serialVersionUID = -5670100941398542996L;
+	@Excel(name = "id")
 	private Integer id;
+	@Excel(name = "姓名")
 	private String name;
 	public Integer getId() {
 		return id;

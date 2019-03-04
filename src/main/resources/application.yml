@@ -1,4 +1,4 @@
-debug: true
+debug: false
 logging:
     level:
         com:
@@ -51,3 +51,6 @@ swagger:
     description: 服务端接口
     title: 测试服务
     version: 版本V1.0
+esConfig:
+    switch: true
+  
