@@ -1,9 +1,23 @@
 package com.example.demo.service.impl;
 
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.io.Writer;
+import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
+
+import javax.servlet.http.HttpServletResponse;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
@@ -14,6 +28,8 @@ import org.hibernate.validator.internal.util.StringHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,9 +37,16 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.dao.DemoDao;
 import com.example.demo.entity.Demo;
+import com.example.demo.model.DateTestModel;
 import com.example.demo.service.DemoService;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+
+import freemarker.template.Configuration;
+import freemarker.template.Template;
 @Service
 public class DemoServiceImpl implements DemoService{
 	
@@ -35,6 +58,8 @@ public class DemoServiceImpl implements DemoService{
 	
 	@Autowired
 	private RedisTemplate<String, Demo> redisTemplateDemo;
+	
+	
 	
 	private static final Logger log = LoggerFactory.getLogger( DemoServiceImpl.class );
 
@@ -151,4 +176,83 @@ public class DemoServiceImpl implements DemoService{
 		}
 		return "success";
 	}
+
+	@Override
+	public String testDateFormate(DateTestModel time) {
+		System.out.println("--time--"+time.getAddDate());
+		return time.getAddDate().toString();
+	}
+	
+	static class Model{
+        public Date date;
+    }
+	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
+		String json = "{\"date\":\"2019-03-18T14:53:31.8713586+08:00\"}";
+		
+		System.out.println("jackson:" + new ObjectMapper().readValue(json, Model.class).date);
+		//System.out.println("fastjson:" + JSON.parseObject(json, Model.class).date);
+	}
+
+	@Override
+	public void testWordTemplate(HttpServletResponse response) {
+		// 获取项目资源文件夹 zbxx.doc
+		Resource resource = new ClassPathResource("zbxx" + ".doc");
+		Resource resource1 = new ClassPathResource("chmb" + ".ftl");
+		BufferedInputStream in = null;
+		OutputStream out = null;
+		BufferedInputStream in2 = null;
+		try {
+			response.setHeader("content-type", "application/octet-stream");
+			response.setContentType("application/octet-stream");
+			response.setHeader("Content-Disposition",
+					"attachment;filename=" + URLEncoder.encode("sssss" + ".doc", "UTF-8"));
+			//in = new BufferedInputStream(resource.getInputStream());
+			
+			Map<String, String> map = new HashMap<String, String>();
+			map.put("jbjq", "警报接警");
+			map.put("xsbj", "刑事报警多少肯定解封了时代峻峰看介绍的反馈大立科技的开发几个老师快递费");
+			map.put("zabj", "治安报警山东矿机分离焦虑跨境电商房管局上岛咖啡较高的非");
+			map.put("stationName", "江汉分局治安大队");
+			map.put("date", "2019年02月28日");
+			Configuration configuration = new Configuration();
+			configuration.setDefaultEncoding("utf-8");
+			//String filePath = resource.getFile().getPath();
+			configuration.setClassForTemplateLoading(this.getClass(), "/templates");
+			Template freemarkerTemplate = configuration.getTemplate("mb.ftl");
+			File file = createDoc(map,freemarkerTemplate);
+			InputStream fin = new FileInputStream(file);
+			in2 = new BufferedInputStream(fin);
+			
+			
+			out = response.getOutputStream();
+			byte[] buff = new byte[1024];
+			int i = -1;
+			while ((i = in2.read(buff)) != -1) {
+				out.write(buff, 0, i);
+			}
+			out.flush();
+			out.close();
+			in2.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private static File createDoc(Map<String, String> dataMap, Template template) {
+		String name = "zzx.doc";
+		File f = new File(name);
+		Template t = template;
+		try {
+			// 这个地方不能使用FileWriter因为需要指定编码类型否则生成的Word文档会因为有无法识别的编码而无法打开
+			Writer w = new OutputStreamWriter(new FileOutputStream(f), "utf-8");
+			t.process(dataMap, w);
+			w.close();
+		} catch (Exception ex) {
+			ex.printStackTrace();
+			throw new RuntimeException(ex);
+		}
+		return f;
+	} 
+	 
 }
