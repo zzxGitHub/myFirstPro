@@ -37,6 +37,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.dao.DemoDao;
 import com.example.demo.entity.Demo;
+import com.example.demo.model.Content;
 import com.example.demo.model.DateTestModel;
 import com.example.demo.service.DemoService;
 import com.fasterxml.jackson.core.JsonParseException;
@@ -47,6 +48,7 @@ import com.github.pagehelper.PageInfo;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
+import freemarker.template.Version;
 @Service
 public class DemoServiceImpl implements DemoService{
 	
@@ -59,7 +61,7 @@ public class DemoServiceImpl implements DemoService{
 	@Autowired
 	private RedisTemplate<String, Demo> redisTemplateDemo;
 	
-	
+	public static final Version DEFAULT_INCOMPATIBLE_IMPROVEMENTS = Configuration.VERSION_2_3_0;
 	
 	private static final Logger log = LoggerFactory.getLogger( DemoServiceImpl.class );
 
@@ -208,17 +210,30 @@ public class DemoServiceImpl implements DemoService{
 					"attachment;filename=" + URLEncoder.encode("sssss" + ".doc", "UTF-8"));
 			//in = new BufferedInputStream(resource.getInputStream());
 			
-			Map<String, String> map = new HashMap<String, String>();
-			map.put("jbjq", "警报接警");
+			Map<String, Object> map = new HashMap<String, Object>();
+			/*map.put("jbjq", "警报接警");
 			map.put("xsbj", "刑事报警多少肯定解封了时代峻峰看介绍的反馈大立科技的开发几个老师快递费");
 			map.put("zabj", "治安报警山东矿机分离焦虑跨境电商房管局上岛咖啡较高的非");
 			map.put("stationName", "江汉分局治安大队");
-			map.put("date", "2019年02月28日");
-			Configuration configuration = new Configuration();
+			map.put("date", "2019年02月28日");*/
+			List<Content> content = new ArrayList<>();
+			for (int i = 0; i < 10; i++) {
+				Content t = new Content();
+				t.setFirstTitle("【警情概况】");
+				t.setTitle("洪山发生交通事故一起");
+				t.setContent("东方国际看得见风时光机来看待发奖金大富科技郭老师地方俊哥劳动法空简单非空格键乐山大佛");
+				content.add(t);
+			}
+			map.put("contentList", content);
+			map.put("shenhe", "张泽雄");
+			map.put("shenpi", "陈文豪");
+			map.put("bianji", "吴傲然");
+			map.put("timeArrange", "(2019年03月28日-2019年03月28日)");
+			Configuration configuration = new Configuration(DEFAULT_INCOMPATIBLE_IMPROVEMENTS);
 			configuration.setDefaultEncoding("utf-8");
 			//String filePath = resource.getFile().getPath();
 			configuration.setClassForTemplateLoading(this.getClass(), "/templates");
-			Template freemarkerTemplate = configuration.getTemplate("mb.ftl");
+			Template freemarkerTemplate = configuration.getTemplate("zbxx2.ftl");
 			File file = createDoc(map,freemarkerTemplate);
 			InputStream fin = new FileInputStream(file);
 			in2 = new BufferedInputStream(fin);
@@ -239,7 +254,7 @@ public class DemoServiceImpl implements DemoService{
 		}
 	}
 	
-	private static File createDoc(Map<String, String> dataMap, Template template) {
+	private static File createDoc(Map<String, Object> dataMap, Template template) {
 		String name = "zzx.doc";
 		File f = new File(name);
 		Template t = template;

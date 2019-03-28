@@ -7,17 +7,17 @@
 		<o:Author>Blue User</o:Author>
 		<o:LastAuthor>zzx</o:LastAuthor>
 		<o:Revision>2</o:Revision>
-		<o:TotalTime>0</o:TotalTime>
+		<o:TotalTime>1</o:TotalTime>
 		<o:LastPrinted>2015-07-25T00:08:00Z</o:LastPrinted>
-		<o:Created>2019-03-28T02:57:00Z</o:Created>
-		<o:LastSaved>2019-03-28T02:57:00Z</o:LastSaved>
+		<o:Created>2019-03-28T02:10:00Z</o:Created>
+		<o:LastSaved>2019-03-28T02:10:00Z</o:LastSaved>
 		<o:Pages>1</o:Pages>
-		<o:Words>19</o:Words>
-		<o:Characters>112</o:Characters>
+		<o:Words>15</o:Words>
+		<o:Characters>88</o:Characters>
 		<o:Company>Blue</o:Company>
 		<o:Lines>1</o:Lines>
 		<o:Paragraphs>1</o:Paragraphs>
-		<o:CharactersWithSpaces>130</o:CharactersWithSpaces>
+		<o:CharactersWithSpaces>102</o:CharactersWithSpaces>
 		<o:Version>16</o:Version>
 	</o:DocumentProperties>
 	<w:fonts>
@@ -818,7 +818,7 @@
 		<w:doNotEmbedSystemFonts/>
 		<w:bordersDontSurroundHeader/>
 		<w:bordersDontSurroundFooter/>
-		<w:proofState w:grammar="clean"/>
+		<w:proofState w:spelling="clean" w:grammar="clean"/>
 		<w:defaultTabStop w:val="420"/>
 		<w:drawingGridVerticalSpacing w:val="156"/>
 		<w:displayHorizontalDrawingGridEvery w:val="0"/>
@@ -836,14 +836,14 @@
 		</w:hdrShapeDefaults>
 		<w:footnotePr>
 			<w:footnote w:type="separator">
-				<w:p wsp:rsidR="00590CD2" wsp:rsidRDefault="00590CD2" wsp:rsidP="003F6F2D">
+				<w:p wsp:rsidR="00AC712E" wsp:rsidRDefault="00AC712E" wsp:rsidP="003F6F2D">
 					<w:r>
 						<w:separator/>
 					</w:r>
 				</w:p>
 			</w:footnote>
 			<w:footnote w:type="continuation-separator">
-				<w:p wsp:rsidR="00590CD2" wsp:rsidRDefault="00590CD2" wsp:rsidP="003F6F2D">
+				<w:p wsp:rsidR="00AC712E" wsp:rsidRDefault="00AC712E" wsp:rsidP="003F6F2D">
 					<w:r>
 						<w:continuationSeparator/>
 					</w:r>
@@ -852,14 +852,14 @@
 		</w:footnotePr>
 		<w:endnotePr>
 			<w:endnote w:type="separator">
-				<w:p wsp:rsidR="00590CD2" wsp:rsidRDefault="00590CD2" wsp:rsidP="003F6F2D">
+				<w:p wsp:rsidR="00AC712E" wsp:rsidRDefault="00AC712E" wsp:rsidP="003F6F2D">
 					<w:r>
 						<w:separator/>
 					</w:r>
 				</w:p>
 			</w:endnote>
 			<w:endnote w:type="continuation-separator">
-				<w:p wsp:rsidR="00590CD2" wsp:rsidRDefault="00590CD2" wsp:rsidP="003F6F2D">
+				<w:p wsp:rsidR="00AC712E" wsp:rsidRDefault="00AC712E" wsp:rsidP="003F6F2D">
 					<w:r>
 						<w:continuationSeparator/>
 					</w:r>
@@ -918,7 +918,6 @@
 			<wsp:rsid wsp:val="000442FD"/>
 			<wsp:rsid wsp:val="00044C90"/>
 			<wsp:rsid wsp:val="00044FD1"/>
-			<wsp:rsid wsp:val="000458CC"/>
 			<wsp:rsid wsp:val="00045B6A"/>
 			<wsp:rsid wsp:val="0004676E"/>
 			<wsp:rsid wsp:val="0004720D"/>
@@ -966,7 +965,6 @@
 			<wsp:rsid wsp:val="000B5B4B"/>
 			<wsp:rsid wsp:val="000C2169"/>
 			<wsp:rsid wsp:val="000C2EFF"/>
-			<wsp:rsid wsp:val="000C39C5"/>
 			<wsp:rsid wsp:val="000C4BE5"/>
 			<wsp:rsid wsp:val="000C6B7D"/>
 			<wsp:rsid wsp:val="000C6BF4"/>
@@ -1091,12 +1089,12 @@
 			<wsp:rsid wsp:val="001B1644"/>
 			<wsp:rsid wsp:val="001B1742"/>
 			<wsp:rsid wsp:val="001B4385"/>
+			<wsp:rsid wsp:val="001B5022"/>
 			<wsp:rsid wsp:val="001B530C"/>
 			<wsp:rsid wsp:val="001B59F5"/>
 			<wsp:rsid wsp:val="001B6F01"/>
 			<wsp:rsid wsp:val="001C0C0E"/>
 			<wsp:rsid wsp:val="001C43FB"/>
-			<wsp:rsid wsp:val="001C51D2"/>
 			<wsp:rsid wsp:val="001D096E"/>
 			<wsp:rsid wsp:val="001D226B"/>
 			<wsp:rsid wsp:val="001D2965"/>
@@ -1322,7 +1320,6 @@
 			<wsp:rsid wsp:val="003878B8"/>
 			<wsp:rsid wsp:val="00387CBF"/>
 			<wsp:rsid wsp:val="00390E24"/>
-			<wsp:rsid wsp:val="00391FAB"/>
 			<wsp:rsid wsp:val="00393CAE"/>
 			<wsp:rsid wsp:val="00393EAF"/>
 			<wsp:rsid wsp:val="00394170"/>
@@ -1419,7 +1416,6 @@
 			<wsp:rsid wsp:val="0044538D"/>
 			<wsp:rsid wsp:val="00446516"/>
 			<wsp:rsid wsp:val="00446641"/>
-			<wsp:rsid wsp:val="00446AF8"/>
 			<wsp:rsid wsp:val="0045086A"/>
 			<wsp:rsid wsp:val="0045105E"/>
 			<wsp:rsid wsp:val="004513AD"/>
@@ -1505,7 +1501,6 @@
 			<wsp:rsid wsp:val="005077F0"/>
 			<wsp:rsid wsp:val="00511028"/>
 			<wsp:rsid wsp:val="00512713"/>
-			<wsp:rsid wsp:val="00513727"/>
 			<wsp:rsid wsp:val="00514DF4"/>
 			<wsp:rsid wsp:val="00515EFE"/>
 			<wsp:rsid wsp:val="00516E17"/>
@@ -1558,7 +1553,6 @@
 			<wsp:rsid wsp:val="00583FA5"/>
 			<wsp:rsid wsp:val="005844D6"/>
 			<wsp:rsid wsp:val="005862BA"/>
-			<wsp:rsid wsp:val="00590CD2"/>
 			<wsp:rsid wsp:val="0059203B"/>
 			<wsp:rsid wsp:val="00592978"/>
 			<wsp:rsid wsp:val="005937E4"/>
@@ -1569,10 +1563,8 @@
 			<wsp:rsid wsp:val="005A3605"/>
 			<wsp:rsid wsp:val="005A5E2B"/>
 			<wsp:rsid wsp:val="005A61B9"/>
-			<wsp:rsid wsp:val="005A6C0A"/>
 			<wsp:rsid wsp:val="005B12EE"/>
 			<wsp:rsid wsp:val="005B26D1"/>
-			<wsp:rsid wsp:val="005B3AC9"/>
 			<wsp:rsid wsp:val="005B42E7"/>
 			<wsp:rsid wsp:val="005B45D1"/>
 			<wsp:rsid wsp:val="005B5C23"/>
@@ -1788,7 +1780,6 @@
 			<wsp:rsid wsp:val="00766D7F"/>
 			<wsp:rsid wsp:val="00770D92"/>
 			<wsp:rsid wsp:val="00770E73"/>
-			<wsp:rsid wsp:val="00772FF9"/>
 			<wsp:rsid wsp:val="007732A2"/>
 			<wsp:rsid wsp:val="00773804"/>
 			<wsp:rsid wsp:val="00774177"/>
@@ -1823,7 +1814,6 @@
 			<wsp:rsid wsp:val="007C3956"/>
 			<wsp:rsid wsp:val="007C418A"/>
 			<wsp:rsid wsp:val="007C4C22"/>
-			<wsp:rsid wsp:val="007C5179"/>
 			<wsp:rsid wsp:val="007C55C4"/>
 			<wsp:rsid wsp:val="007C5C56"/>
 			<wsp:rsid wsp:val="007C6055"/>
@@ -2142,7 +2132,6 @@
 			<wsp:rsid wsp:val="00A6305E"/>
 			<wsp:rsid wsp:val="00A638FE"/>
 			<wsp:rsid wsp:val="00A6598B"/>
-			<wsp:rsid wsp:val="00A67309"/>
 			<wsp:rsid wsp:val="00A70FEA"/>
 			<wsp:rsid wsp:val="00A72F2B"/>
 			<wsp:rsid wsp:val="00A72FC6"/>
@@ -2175,6 +2164,7 @@
 			<wsp:rsid wsp:val="00AC3908"/>
 			<wsp:rsid wsp:val="00AC4680"/>
 			<wsp:rsid wsp:val="00AC6ACA"/>
+			<wsp:rsid wsp:val="00AC712E"/>
 			<wsp:rsid wsp:val="00AC72DB"/>
 			<wsp:rsid wsp:val="00AD1DB9"/>
 			<wsp:rsid wsp:val="00AD2A4F"/>
@@ -2217,7 +2207,6 @@
 			<wsp:rsid wsp:val="00B239CE"/>
 			<wsp:rsid wsp:val="00B23FA6"/>
 			<wsp:rsid wsp:val="00B258FC"/>
-			<wsp:rsid wsp:val="00B25B6B"/>
 			<wsp:rsid wsp:val="00B26047"/>
 			<wsp:rsid wsp:val="00B27515"/>
 			<wsp:rsid wsp:val="00B3037C"/>
@@ -2349,6 +2338,7 @@
 			<wsp:rsid wsp:val="00C24672"/>
 			<wsp:rsid wsp:val="00C249F1"/>
 			<wsp:rsid wsp:val="00C24B9F"/>
+			<wsp:rsid wsp:val="00C255EF"/>
 			<wsp:rsid wsp:val="00C2576A"/>
 			<wsp:rsid wsp:val="00C25FC4"/>
 			<wsp:rsid wsp:val="00C26AE5"/>
@@ -2415,7 +2405,6 @@
 			<wsp:rsid wsp:val="00CC75AD"/>
 			<wsp:rsid wsp:val="00CC7ECA"/>
 			<wsp:rsid wsp:val="00CD0F70"/>
-			<wsp:rsid wsp:val="00CD0FD1"/>
 			<wsp:rsid wsp:val="00CD1929"/>
 			<wsp:rsid wsp:val="00CD2B2F"/>
 			<wsp:rsid wsp:val="00CD2F2B"/>
@@ -2598,7 +2587,6 @@
 			<wsp:rsid wsp:val="00E137AC"/>
 			<wsp:rsid wsp:val="00E13B2F"/>
 			<wsp:rsid wsp:val="00E13D95"/>
-			<wsp:rsid wsp:val="00E14221"/>
 			<wsp:rsid wsp:val="00E1560B"/>
 			<wsp:rsid wsp:val="00E15E40"/>
 			<wsp:rsid wsp:val="00E16E4B"/>
@@ -2706,7 +2694,6 @@
 			<wsp:rsid wsp:val="00F040A3"/>
 			<wsp:rsid wsp:val="00F043D1"/>
 			<wsp:rsid wsp:val="00F117D8"/>
-			<wsp:rsid wsp:val="00F12A0B"/>
 			<wsp:rsid wsp:val="00F12AD6"/>
 			<wsp:rsid wsp:val="00F13AFA"/>
 			<wsp:rsid wsp:val="00F14B6D"/>
@@ -2736,7 +2723,6 @@
 			<wsp:rsid wsp:val="00F459F8"/>
 			<wsp:rsid wsp:val="00F45FAD"/>
 			<wsp:rsid wsp:val="00F46637"/>
-			<wsp:rsid wsp:val="00F4694C"/>
 			<wsp:rsid wsp:val="00F4740F"/>
 			<wsp:rsid wsp:val="00F53B53"/>
 			<wsp:rsid wsp:val="00F55955"/>
@@ -2821,7 +2807,6 @@
 			<wsp:rsid wsp:val="00FF0435"/>
 			<wsp:rsid wsp:val="00FF3DE1"/>
 			<wsp:rsid wsp:val="00FF4180"/>
-			<wsp:rsid wsp:val="00FF4633"/>
 			<wsp:rsid wsp:val="00FF570E"/>
 			<wsp:rsid wsp:val="00FF60C0"/>
 			<wsp:rsid wsp:val="00FF6424"/>
@@ -2868,7 +2853,7 @@
 					<w:t>值班信息报告</w:t>
 				</w:r>
 			</w:p>
-			<w:p wsp:rsidR="006B1E16" wsp:rsidRPr="006B1E16" wsp:rsidRDefault="00391FAB" wsp:rsidP="002B1038">
+			<w:p wsp:rsidR="006B1E16" wsp:rsidRPr="006B1E16" wsp:rsidRDefault="006B1E16" wsp:rsidP="002B1038">
 				<w:pPr>
 					<w:jc w:val="center"/>
 					<w:rPr>
@@ -2878,17 +2863,74 @@
 						<w:sz-cs w:val="32"/>
 					</w:rPr>
 				</w:pPr>
-				<w:r>
+				<aml:annotation aml:id="0" w:type="Word.Bookmark.Start" w:name="HeaderTime"/>
+				<w:r wsp:rsidRPr="006B1E16">
 					<w:rPr>
 						<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="宋体" w:hint="fareast"/>
 						<wx:font wx:val="仿宋_GB2312"/>
 						<w:sz w:val="32"/>
 						<w:sz-cs w:val="32"/>
 					</w:rPr>
-					<w:t>(2019年03月28日-2019年03月28日)</w:t>
+					<w:t>（</w:t>
 				</w:r>
+				<w:r wsp:rsidR="009E7F75">
+					<w:rPr>
+						<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="宋体" w:hint="fareast"/>
+						<wx:font wx:val="仿宋_GB2312"/>
+						<w:sz w:val="32"/>
+						<w:sz-cs w:val="32"/>
+					</w:rPr>
+					<w:t>X</w:t>
+				</w:r>
+				<w:r wsp:rsidRPr="006B1E16">
+					<w:rPr>
+						<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="宋体" w:hint="fareast"/>
+						<wx:font wx:val="仿宋_GB2312"/>
+						<w:sz w:val="32"/>
+						<w:sz-cs w:val="32"/>
+					</w:rPr>
+					<w:t>月</w:t>
+				</w:r>
+				<w:r wsp:rsidR="009E7F75">
+					<w:rPr>
+						<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="宋体" w:hint="fareast"/>
+						<wx:font wx:val="仿宋_GB2312"/>
+						<w:sz w:val="32"/>
+						<w:sz-cs w:val="32"/>
+					</w:rPr>
+					<w:t>X</w:t>
+				</w:r>
+				<w:r wsp:rsidRPr="006B1E16">
+					<w:rPr>
+						<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="宋体" w:hint="fareast"/>
+						<wx:font wx:val="仿宋_GB2312"/>
+						<w:sz w:val="32"/>
+						<w:sz-cs w:val="32"/>
+					</w:rPr>
+					<w:t>日7时至</w:t>
+				</w:r>
+				<w:r wsp:rsidR="009E7F75">
+					<w:rPr>
+						<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="宋体" w:hint="fareast"/>
+						<wx:font wx:val="仿宋_GB2312"/>
+						<w:sz w:val="32"/>
+						<w:sz-cs w:val="32"/>
+					</w:rPr>
+					<w:t>X月X</w:t>
+				</w:r>
+				<w:r wsp:rsidRPr="006B1E16">
+					<w:rPr>
+						<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="宋体" w:hint="fareast"/>
+						<wx:font wx:val="仿宋_GB2312"/>
+						<w:sz w:val="32"/>
+						<w:sz-cs w:val="32"/>
+					</w:rPr>
+					<w:t>日7时）</w:t>
+				</w:r>
+				<aml:annotation aml:id="0" w:type="Word.Bookmark.End"/>
 			</w:p>
 			<wx:sub-section>
+				<#list contentList as content>
 					<w:p wsp:rsidR="00BE3DBA" wsp:rsidRDefault="00520516" wsp:rsidP="00BE3DBA">
 						<w:pPr>
 							<w:spacing w:line="520" w:line-rule="exact"/>
@@ -2913,25 +2955,12 @@
 								<w:sz w:val="32"/>
 								<w:sz-cs w:val="32"/>
 							</w:rPr>
-							<w:t>【警情概况】</w:t>
-						</w:r>
-						<w:r wsp:rsidR="00391FAB">
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t/>
+							<w:t>${content.tinyTitle}</w:t>
 						</w:r>
 					</w:p>
-					<w:p wsp:rsidR="00FE4F28" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
+					<w:p wsp:rsidR="00FE4F28" wsp:rsidRDefault="00520516" wsp:rsidP="00520516">
 						<w:pPr>
 							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
 							<w:rPr>
 								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
 								<wx:font wx:val="仿宋_GB2312"/>
@@ -2940,17 +2969,7 @@
 								<w:sz-cs w:val="30"/>
 							</w:rPr>
 						</w:pPr>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.Start" w:name="EventSummarize"/>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>标题:洪山发生交通事故一起</w:t>
-						</w:r>
+						<aml:annotation aml:id="1" w:type="Word.Bookmark.Start" w:name="EventSummarize"/>
 						<w:r>
 							<w:rPr>
 								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
@@ -2959,912 +2978,18 @@
 								<w:sz w:val="32"/>
 								<w:sz-cs w:val="30"/>
 							</w:rPr>
-							<w:t/>
+							<w:t>${content.titleContent}</w:t>
 						</w:r>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.End"/>
+						<w:proofErr w:type="spellStart"/>
+
+						<aml:annotation aml:id="1" w:type="Word.Bookmark.End"/>
 					</w:p>
-					<w:p wsp:rsidR="00F12A0B" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>内容:东方国际看得见风时光机来看待发奖金大富科技郭老师地方俊哥劳动法空简单非空格键乐山大佛</w:t>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00BE3DBA" wsp:rsidRDefault="00520516" wsp:rsidP="00BE3DBA">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:outlineLvl w:val="0"/>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t>【警情概况】</w:t>
-						</w:r>
-						<w:r wsp:rsidR="00391FAB">
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00FE4F28" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.Start" w:name="EventSummarize"/>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>标题:洪山发生交通事故一起</w:t>
-						</w:r>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.End"/>
-					</w:p>
-					<w:p wsp:rsidR="00F12A0B" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>内容:东方国际看得见风时光机来看待发奖金大富科技郭老师地方俊哥劳动法空简单非空格键乐山大佛</w:t>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00BE3DBA" wsp:rsidRDefault="00520516" wsp:rsidP="00BE3DBA">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:outlineLvl w:val="0"/>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t>【警情概况】</w:t>
-						</w:r>
-						<w:r wsp:rsidR="00391FAB">
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00FE4F28" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.Start" w:name="EventSummarize"/>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>标题:洪山发生交通事故一起</w:t>
-						</w:r>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.End"/>
-					</w:p>
-					<w:p wsp:rsidR="00F12A0B" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>内容:东方国际看得见风时光机来看待发奖金大富科技郭老师地方俊哥劳动法空简单非空格键乐山大佛</w:t>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00BE3DBA" wsp:rsidRDefault="00520516" wsp:rsidP="00BE3DBA">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:outlineLvl w:val="0"/>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t>【警情概况】</w:t>
-						</w:r>
-						<w:r wsp:rsidR="00391FAB">
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00FE4F28" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.Start" w:name="EventSummarize"/>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>标题:洪山发生交通事故一起</w:t>
-						</w:r>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.End"/>
-					</w:p>
-					<w:p wsp:rsidR="00F12A0B" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>内容:东方国际看得见风时光机来看待发奖金大富科技郭老师地方俊哥劳动法空简单非空格键乐山大佛</w:t>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00BE3DBA" wsp:rsidRDefault="00520516" wsp:rsidP="00BE3DBA">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:outlineLvl w:val="0"/>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t>【警情概况】</w:t>
-						</w:r>
-						<w:r wsp:rsidR="00391FAB">
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00FE4F28" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.Start" w:name="EventSummarize"/>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>标题:洪山发生交通事故一起</w:t>
-						</w:r>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.End"/>
-					</w:p>
-					<w:p wsp:rsidR="00F12A0B" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>内容:东方国际看得见风时光机来看待发奖金大富科技郭老师地方俊哥劳动法空简单非空格键乐山大佛</w:t>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00BE3DBA" wsp:rsidRDefault="00520516" wsp:rsidP="00BE3DBA">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:outlineLvl w:val="0"/>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t>【警情概况】</w:t>
-						</w:r>
-						<w:r wsp:rsidR="00391FAB">
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00FE4F28" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.Start" w:name="EventSummarize"/>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>标题:洪山发生交通事故一起</w:t>
-						</w:r>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.End"/>
-					</w:p>
-					<w:p wsp:rsidR="00F12A0B" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>内容:东方国际看得见风时光机来看待发奖金大富科技郭老师地方俊哥劳动法空简单非空格键乐山大佛</w:t>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00BE3DBA" wsp:rsidRDefault="00520516" wsp:rsidP="00BE3DBA">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:outlineLvl w:val="0"/>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t>【警情概况】</w:t>
-						</w:r>
-						<w:r wsp:rsidR="00391FAB">
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00FE4F28" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.Start" w:name="EventSummarize"/>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>标题:洪山发生交通事故一起</w:t>
-						</w:r>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.End"/>
-					</w:p>
-					<w:p wsp:rsidR="00F12A0B" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>内容:东方国际看得见风时光机来看待发奖金大富科技郭老师地方俊哥劳动法空简单非空格键乐山大佛</w:t>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00BE3DBA" wsp:rsidRDefault="00520516" wsp:rsidP="00BE3DBA">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:outlineLvl w:val="0"/>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t>【警情概况】</w:t>
-						</w:r>
-						<w:r wsp:rsidR="00391FAB">
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00FE4F28" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.Start" w:name="EventSummarize"/>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>标题:洪山发生交通事故一起</w:t>
-						</w:r>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.End"/>
-					</w:p>
-					<w:p wsp:rsidR="00F12A0B" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>内容:东方国际看得见风时光机来看待发奖金大富科技郭老师地方俊哥劳动法空简单非空格键乐山大佛</w:t>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00BE3DBA" wsp:rsidRDefault="00520516" wsp:rsidP="00BE3DBA">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:outlineLvl w:val="0"/>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t>【警情概况】</w:t>
-						</w:r>
-						<w:r wsp:rsidR="00391FAB">
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00FE4F28" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.Start" w:name="EventSummarize"/>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>标题:洪山发生交通事故一起</w:t>
-						</w:r>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.End"/>
-					</w:p>
-					<w:p wsp:rsidR="00F12A0B" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>内容:东方国际看得见风时光机来看待发奖金大富科技郭老师地方俊哥劳动法空简单非空格键乐山大佛</w:t>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00BE3DBA" wsp:rsidRDefault="00520516" wsp:rsidP="00BE3DBA">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:outlineLvl w:val="0"/>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体" w:hint="fareast"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t>【警情概况】</w:t>
-						</w:r>
-						<w:r wsp:rsidR="00391FAB">
-							<w:rPr>
-								<w:rFonts w:ascii="黑体" w:fareast="黑体" w:h-ansi="宋体"/>
-								<wx:font wx:val="黑体"/>
-								<w:snapToGrid w:val="off"/>
-								<w:color w:val="000000"/>
-								<w:kern w:val="0"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="32"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-					</w:p>
-					<w:p wsp:rsidR="00FE4F28" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.Start" w:name="EventSummarize"/>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>标题:洪山发生交通事故一起</w:t>
-						</w:r>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t/>
-						</w:r>
-						<aml:annotation aml:id="0" w:type="Word.Bookmark.End"/>
-					</w:p>
-					<w:p wsp:rsidR="00F12A0B" wsp:rsidRDefault="00F12A0B" wsp:rsidP="000C39C5">
-						<w:pPr>
-							<w:spacing w:line="520" w:line-rule="exact"/>
-							<w:ind w:first-line="420"/>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-						</w:pPr>
-						<w:r>
-							<w:rPr>
-								<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
-								<wx:font wx:val="仿宋_GB2312"/>
-								<w:snapToGrid w:val="off"/>
-								<w:sz w:val="32"/>
-								<w:sz-cs w:val="30"/>
-							</w:rPr>
-							<w:t>内容:东方国际看得见风时光机来看待发奖金大富科技郭老师地方俊哥劳动法空简单非空格键乐山大佛</w:t>
-						</w:r>
-					</w:p>
-				
-				<w:p wsp:rsidR="007C5179" wsp:rsidRDefault="007C5179" wsp:rsidP="00520516">
+				</#list>
+				<w:p wsp:rsidR="00562481" wsp:rsidRDefault="00562481" wsp:rsidP="00520516">
 					<w:pPr>
 						<w:spacing w:line="520" w:line-rule="exact"/>
 						<w:rPr>
-							<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312" w:hint="fareast"/>
+							<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:h-ansi="仿宋_GB2312"/>
 							<wx:font wx:val="仿宋_GB2312"/>
 							<w:snapToGrid w:val="off"/>
 							<w:sz w:val="32"/>
@@ -3900,9 +3025,8 @@
 							<w:sz w:val="32"/>
 							<w:sz-cs w:val="32"/>
 						</w:rPr>
-						<w:t>审核:张泽雄</w:t>
+						<w:t>审核：${shenhe}</w:t>
 					</w:r>
-					<aml:annotation aml:id="1" w:type="Word.Bookmark.Start" w:name="Recorder"/>
 					<w:r>
 						<w:rPr>
 							<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:hint="fareast"/>
@@ -3913,7 +3037,7 @@
 						</w:rPr>
 						<w:t>   </w:t>
 					</w:r>
-					<aml:annotation aml:id="1" w:type="Word.Bookmark.End"/>
+					<aml:annotation aml:id="2" w:type="Word.Bookmark.End"/>
 					<w:r wsp:rsidR="0063482C">
 						<w:rPr>
 							<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:hint="fareast"/>
@@ -3932,7 +3056,7 @@
 							<w:sz w:val="32"/>
 							<w:sz-cs w:val="32"/>
 						</w:rPr>
-						<w:t>     </w:t>
+						<w:t>      </w:t>
 					</w:r>
 					<w:r wsp:rsidR="0063482C">
 						<w:rPr>
@@ -3942,9 +3066,8 @@
 							<w:sz w:val="32"/>
 							<w:sz-cs w:val="32"/>
 						</w:rPr>
-						<w:t>审批:陈文豪</w:t>
+						<w:t>审批：${shenpi}</w:t>
 					</w:r>
-
 					<w:r>
 						<w:rPr>
 							<w:rFonts w:ascii="仿宋_GB2312" w:fareast="仿宋_GB2312" w:hint="fareast"/>
@@ -3953,7 +3076,7 @@
 							<w:sz w:val="32"/>
 							<w:sz-cs w:val="32"/>
 						</w:rPr>
-						<w:t>          </w:t>
+						<w:t>            </w:t>
 					</w:r>
 					<w:r wsp:rsidR="0063482C">
 						<w:rPr>
@@ -3963,7 +3086,7 @@
 							<w:sz w:val="32"/>
 							<w:sz-cs w:val="32"/>
 						</w:rPr>
-						<w:t>编辑:吴傲然</w:t>
+						<w:t>编辑：${bianji}</w:t>
 					</w:r>
 				</w:p>
 			</wx:sub-section>
