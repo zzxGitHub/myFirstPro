@@ -61,7 +61,7 @@ public class DemoController {
 	}
 	
 	@GetMapping(value = "/testWordTemplate")
-	@ApiOperation("测试时间参数")
+	@ApiOperation("freeMarker导出word")
 	public void testWordTemplate(HttpServletResponse response) {
 		demoService.testWordTemplate(response);
 	}

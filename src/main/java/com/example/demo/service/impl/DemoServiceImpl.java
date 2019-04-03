@@ -40,6 +40,7 @@ import com.example.demo.entity.Demo;
 import com.example.demo.model.Content;
 import com.example.demo.model.DateTestModel;
 import com.example.demo.service.DemoService;
+import com.example.demo.utils.XmlToDocx;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -48,6 +49,7 @@ import com.github.pagehelper.PageInfo;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
+import freemarker.template.TemplateException;
 import freemarker.template.Version;
 @Service
 public class DemoServiceImpl implements DemoService{
@@ -188,12 +190,12 @@ public class DemoServiceImpl implements DemoService{
 	static class Model{
         public Date date;
     }
-	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
+	/*public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
 		String json = "{\"date\":\"2019-03-18T14:53:31.8713586+08:00\"}";
 		
 		System.out.println("jackson:" + new ObjectMapper().readValue(json, Model.class).date);
 		//System.out.println("fastjson:" + JSON.parseObject(json, Model.class).date);
-	}
+	}*/
 
 	@Override
 	public void testWordTemplate(HttpServletResponse response) {
@@ -224,20 +226,20 @@ public class DemoServiceImpl implements DemoService{
 				t.setContent("东方国际看得见风时光机来看待发奖金大富科技郭老师地方俊哥劳动法空简单非空格键乐山大佛");
 				content.add(t);
 			}
-			map.put("contentList", content);
+			/*map.put("contentList", content);
 			map.put("shenhe", "张泽雄");
 			map.put("shenpi", "陈文豪");
 			map.put("bianji", "吴傲然");
-			map.put("timeArrange", "(2019年03月28日-2019年03月28日)");
+			map.put("timeArrange", "(2019年03月28日-2019年03月28日)");*/
+			map.put("zzx", "大飞哥斯蒂芬个斯蒂芬"+"<w:br/>"+"sds");
 			Configuration configuration = new Configuration(DEFAULT_INCOMPATIBLE_IMPROVEMENTS);
 			configuration.setDefaultEncoding("utf-8");
 			//String filePath = resource.getFile().getPath();
 			configuration.setClassForTemplateLoading(this.getClass(), "/templates");
-			Template freemarkerTemplate = configuration.getTemplate("zbxx2.ftl");
+			Template freemarkerTemplate = configuration.getTemplate("test11.ftl");
 			File file = createDoc(map,freemarkerTemplate);
 			InputStream fin = new FileInputStream(file);
 			in2 = new BufferedInputStream(fin);
-			
 			
 			out = response.getOutputStream();
 			byte[] buff = new byte[1024];
@@ -255,7 +257,7 @@ public class DemoServiceImpl implements DemoService{
 	}
 	
 	private static File createDoc(Map<String, Object> dataMap, Template template) {
-		String name = "zzx.doc";
+		String name = "zzx.docx";
 		File f = new File(name);
 		Template t = template;
 		try {
@@ -268,6 +270,33 @@ public class DemoServiceImpl implements DemoService{
 			throw new RuntimeException(ex);
 		}
 		return f;
-	} 
+	}
+	
+	public static void main(String[] args) throws IOException, TemplateException {
+		try {
+			Map<String, Object> map = new HashMap<>();
+			map.put("zzx", "所得到的");
+			// xml的文件名
+			String xmlTemplate = "test.xml";
+			// docx的路径和文件名
+			String docxTemplate = "d:\\test_template.docx";
+			File docx = new File(docxTemplate);
+			// 填充完数据的临时xml
+			String xmlTemp = "d:\\temp.xml";
+			// 目标文件名
+			String toFilePath = "d:\\test.docx";
+			// 1.map为需要动态传入的数据
+			// 转Docx
+			//XmlToDocx.toDocx(xmlTemplate, docxTemplate, xmlTemp, toFilePath, map);
+			// pdf文件
+			String outPdfFilePath = "test.pdf";
+			/*
+			 * //docx 转pdf DocxToPdf.toPdf(toFilePath,outPdfFilePath); File file = new
+			 * File(outPdfFilePath); //删除docx文件 new File(toFilePath).delete(); //删除临时xml文件
+			 * new File(xmlTemp).delete(); return file;//返回pdf文件
+			 */ } catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
 	 
 }
