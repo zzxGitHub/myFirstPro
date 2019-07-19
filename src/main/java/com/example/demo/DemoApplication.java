@@ -6,10 +6,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
 
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableAutoConfiguration
-@SpringBootApplication(scanBasePackages = "com.example.demo")
+@SpringBootApplication(scanBasePackages = "com.example.demo",exclude = SecurityAutoConfiguration.class)
 @EnableSwagger2
 @MapperScan("com.example.demo.dao")
 public class DemoApplication {

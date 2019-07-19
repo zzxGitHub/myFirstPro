@@ -30,8 +30,15 @@ public class Test {
 	}
 	
 	public static void main(String[] args) {
-		Test t = new Test();
-		int[] nums1 = { 2, 7, 11, 15 };
-		t.twoSum(nums1,9);
+		Thread t = new Thread() {
+			public void run() {
+				pong();
+			}
+		};
+		t.run();
+		System.out.println("222");
+	}
+	static void pong() {
+		System.out.println("111");
 	}
 }

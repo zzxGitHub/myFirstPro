@@ -14,7 +14,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.16.RELEASE</version>
+		<version>2.1.6.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
@@ -93,14 +93,14 @@
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>
 			<artifactId>pagehelper-spring-boot-starter</artifactId>
-			<version>1.1.1</version>
+			<version>1.2.3</version>
 		</dependency>
 		<!-- cxf调用webservice -->
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.apache.cxf</groupId>
 			<artifactId>cxf-spring-boot-starter-jaxws</artifactId>
 			<version>3.1.11</version>
-		</dependency>
+		</dependency> -->
 		<!-- axis调用webservice -->
 		<dependency>
     		<groupId>axis</groupId>
@@ -123,19 +123,16 @@
 		<dependency>
     		<groupId>com.fasterxml.jackson.core</groupId>
     		<artifactId>jackson-databind</artifactId>
-    		<version>2.9.8</version>
 		</dependency>
 		
 		<dependency>
     		<groupId>com.fasterxml.jackson.core</groupId>
     		<artifactId>jackson-annotations</artifactId>
-    		<version>2.9.8</version>
 		</dependency>
 		
 		<dependency>
     		<groupId>com.fasterxml.jackson.core</groupId>
     		<artifactId>jackson-core</artifactId>
-    		<version>2.9.8</version>
 		</dependency>
 		<dependency>
             <groupId>org.freemarker</groupId>

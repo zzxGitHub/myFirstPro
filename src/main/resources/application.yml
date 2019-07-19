@@ -1,10 +1,10 @@
-debug: true
+#debug: true
 logging:
     level:
         com:
             example:
                 demo:
-                    dao: debug
+                    dao: info
         org:
             springframework:
                 web: info
@@ -27,9 +27,22 @@ spring:
         testWhileIdle: true
         timeBetweenEvictionRunsMillis: 60000
         type: com.alibaba.druid.pool.DruidDataSource
-        url: jdbc:oracle:thin:@test.oracle1:1521:orcl
+        url: jdbc:oracle:thin:@172.16.14.155:1521:orcl
         username: HCZZPPolSituInfo
         validationQuery: SELECT 'x' from dual
+    druid:
+    # 是否启用StatFilter配置
+      web-stat-filter:
+        enable: true
+      monitor:
+        # 多个白名单IP用逗号分隔
+        allow: 127.0.0.1
+        # 多个黑名单IP用逗号分隔
+        deny: 0.0.0.0
+        loginUsername: jsong
+        loginPassword: neusoft
+        # 是否开启重置功能
+        resetEnable: false
     http:
         encoding:
             charset: UTF-8
