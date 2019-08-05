@@ -1,5 +1,8 @@
 package com.example.demo.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example.demo.entity.Demo;
+import com.example.demo.model.Content;
 import com.example.demo.model.DateTestModel;
+import com.example.demo.model.TestFan;
 import com.example.demo.service.DemoService;
 import com.github.pagehelper.PageInfo;
 
@@ -64,6 +69,17 @@ public class DemoController {
 	@ApiOperation("freeMarker导出word")
 	public void testWordTemplate(HttpServletResponse response) {
 		demoService.testWordTemplate(response);
+	}
+	
+	@SuppressWarnings("rawtypes")
+	@GetMapping(value = "/testFansssss")
+	@ApiOperation("测试泛型返回值")
+	public List<TestFan> getTest(){
+		List<TestFan> fanList = new ArrayList<TestFan>();
+		TestFan<Content> fan = new TestFan<Content>();
+		fan.setModel(new Content("111","1222","dddd"));
+		fanList.add(fan);
+		return fanList;
 	}
 	
 }

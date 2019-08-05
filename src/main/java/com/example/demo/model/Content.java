@@ -29,4 +29,16 @@ public class Content {
 		this.firstTitle = firstTitle;
 	}
 
+	public Content(String firstTitle, String title, String content) {
+		super();
+		this.firstTitle = firstTitle;
+		this.title = title;
+		this.content = content;
+	}
+
+	public Content() {
+		super();
+	}
+	
+
 }
