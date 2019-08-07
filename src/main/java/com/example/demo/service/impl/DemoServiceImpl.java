@@ -183,6 +183,7 @@ public class DemoServiceImpl implements DemoService{
 
 	@Override
 	public String testDateFormate(DateTestModel time) {
+		System.out.println("--time--"+time.getEaaa().getValue());
 		System.out.println("--time--"+time.getAddDate());
 		return time.getAddDate().toString();
 	}
