@@ -148,6 +148,21 @@
     		<artifactId>org.apache.poi.xwpf.converter.pdf</artifactId>
     		<version>1.0.4</version>
 		</dependency>
+		<dependency>
+    		<groupId>org.projectlombok</groupId>
+    		<artifactId>lombok</artifactId>
+    	</dependency>
+    	<!-- elasticsearch -->
+    	<dependency>
+    		<groupId>org.elasticsearch</groupId>
+    		<artifactId>elasticsearch</artifactId>
+    		<version>6.5.1</version><!--$NO-MVN-MAN-VER$-->
+    	</dependency>
+    	<dependency>
+    		<groupId>org.elasticsearch.client</groupId>
+    		<artifactId>elasticsearch-rest-high-level-client</artifactId>
+    		<version>6.5.1</version><!--$NO-MVN-MAN-VER$-->
+		</dependency>
 	</dependencies>
 
 	<build>

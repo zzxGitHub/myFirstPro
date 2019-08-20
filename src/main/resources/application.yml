@@ -60,6 +60,12 @@ spring:
             min-idle: 0
         port: 6379
         timeout: 0
+    data:
+        elasticsearch:
+            cluster-name: elasticsearch
+            cluster-nodes: 127.0.0.1:9300
+            repositories:
+                enabled: true
 swagger:
     basePackage: com.example.demo.controller
     description: 服务端接口
