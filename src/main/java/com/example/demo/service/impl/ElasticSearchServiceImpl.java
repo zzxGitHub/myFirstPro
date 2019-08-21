@@ -98,5 +98,9 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
 			e.printStackTrace();
 		}
 	}
+	
+	public static void main(String[] args) {
+		
+	}
 
 }
