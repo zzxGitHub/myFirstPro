@@ -10,4 +10,6 @@ public interface ElasticSearchService {
 
 	void deleteIndex(String indexName);
 
+	void putMapping(String indexName);
+
 }

@@ -1,12 +1,15 @@
 package com.example.demo.service.impl;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.UUID;
 
+import org.apache.commons.io.IOUtils;
 import org.elasticsearch.action.ActionListener;
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequest;
 import org.elasticsearch.action.admin.indices.create.CreateIndexResponse;
 import org.elasticsearch.action.admin.indices.delete.DeleteIndexRequest;
+import org.elasticsearch.action.admin.indices.mapping.put.PutMappingRequest;
 import org.elasticsearch.action.index.IndexRequest;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.support.WriteRequest;
@@ -98,9 +101,26 @@ public class ElasticSearchServiceImpl implements ElasticSearchService {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public static void main(String[] args) {
-		
+
+	}
+
+	@Override
+	public void putMapping(String indexName) {
+		PutMappingRequest request = new PutMappingRequest("zzxindex");
+		InputStream inputStream = this.getClass().getResourceAsStream("/mapping/mapping.json");
+		try {
+			String mapping = IOUtils.toString(inputStream, "UTF-8");
+			request.type("zzxtype");
+			request.source(mapping, XContentType.JSON);
+			AcknowledgedResponse putMappingResponse = client.indices().putMapping(request, RequestOptions.DEFAULT);
+			boolean acknowledged = putMappingResponse.isAcknowledged();
+			log.info("putmapping" + indexName + ":{}", acknowledged);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

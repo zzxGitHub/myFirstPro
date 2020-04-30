@@ -1,0 +1,1523 @@
+{
+    "dynamic": false,
+    "properties": {
+        "id": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "businessFrom": {
+            "type": "long"
+        },
+        "businessKey": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "addDateTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "addStationId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "addStationName": {
+            "type": "text",
+            "analyzer": "ik_max_word"
+        },
+        "addUserId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "addUserName": {
+            "type": "text",
+            "analyzer": "ik_max_word"
+        },
+        "updateDateTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "updateStationId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "updateStationName": {
+            "type": "text",
+            "analyzer": "ik_max_word"
+        },
+        "updateUserId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "updateUserName": {
+            "type": "text",
+            "analyzer": "ik_max_word"
+        },
+        "caseNatures": {
+            "type": "long"
+        },
+        "caseNaturesWords": {
+            "type": "text"
+        },
+        "dataSource": {
+            "type": "long"
+        },
+        "dataSourceWords": {
+            "type": "text"
+        },
+        "keyword": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fielddata": true
+        },
+        "keyid": {
+            "type": "text",
+            "analyzer": "ik_max_word"
+        },
+        "latitude": {
+            "type": "float"
+        },
+        "longitude": {
+            "type": "float"
+        },
+        "leaderApproval": {
+            "type": "long"
+        },
+        "leaderApprovalWords": {
+            "type": "text"
+        },
+        "mediaIntervention": {
+            "type": "long"
+        },
+        "mediaInterventionWords": {
+            "type": "text"
+        },
+        "netSource": {
+            "type": "long"
+        },
+        "netSourceWords": {
+            "type": "text"
+        },
+        "no": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                },
+                "ngram": {
+                    "type": "text",
+                    "analyzer": "ngram_analyzer",
+                    "search_analyzer": "standard"
+                }
+            }
+        },
+        "content": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fielddata": true,
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                }
+            }
+        },
+        "phoneNumber": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                },
+                "ngram": {
+                    "type": "text",
+                    "analyzer": "ngram_analyzer",
+                    "search_analyzer": "standard"
+                }
+            }
+        },
+        "pubsentimentClassification": {
+            "type": "long"
+        },
+        "pubsentimentClassificationWords": {
+            "type": "text"
+        },
+        "pubsentimentLevel": {
+            "type": "long"
+        },
+        "pubsentimentNature": {
+            "type": "long"
+        },
+        "pubsentimentNatureWords": {
+            "type": "text"
+        },
+        "remark": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                }
+            }
+        },
+        "sensitiveFactors": {
+            "type": "long"
+        },
+        "sensitiveFactorsWords": {
+            "type": "text"
+        },
+        "status": {
+            "type": "long"
+        },
+        "title": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                }
+            }
+        },
+        "url": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                }
+            }
+        },
+        "address": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                }
+            }
+        },
+        "addressType": {
+            "type": "text",
+            "analyzer": "ik_max_word"
+        },
+        "addressTypeWords": {
+            "type": "text"
+        },
+        "historicalLocation": {
+            "type": "nested",
+            "properties": {
+                "latitude": {
+                    "type": "float"
+                },
+                "longitude": {
+                    "type": "float"
+                },
+                "pubsentimentId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "address": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "id": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "addDateTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "addStationId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "addStationName": {
+                    "type": "text"
+                },
+                "addUserId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "addUserName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "updateDateTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "updateStationId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "updateStationName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "updateUserId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "updateUserName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                }
+            }
+        },
+        "pubsentimentFile": {
+            "type": "nested",
+            "properties": {
+                "fileId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "fileName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "fileType": {
+                    "type": "long"
+                },
+                "pubsentimentId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "id": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "addDateTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "addStationId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "addStationName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "addUserId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "addUserName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "updateDateTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "updateStationId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "updateStationName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "updateUserId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "updateUserName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                }
+            }
+        },
+        "pubsentimentPublishInfo": {
+            "type": "nested",
+            "properties": {
+                "pubsentimentId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "publishContent": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "publishDateTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "publishIp": {
+                    "type": "ip"
+                },
+                "publishLoginId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "publishNickname": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "publishRegUrl": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "publishWebsite": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "id": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "addDateTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "addStationId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "addStationName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "addUserId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "addUserName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "updateDateTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "updateStationId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "updateStationName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "updateUserId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "updateUserName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                }
+            }
+        },
+        "pubsentimentStudy": {
+            "type": "nested",
+            "properties": {
+                "pubsentimentClassification": {
+                    "type": "long"
+                },
+                "pubsentimentLevel": {
+                    "type": "long"
+                },
+                "pubsentimentNature": {
+                    "type": "long"
+                },
+                "pubsentimentId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "id": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "addDateTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "addStationId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "addStationName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "addUserId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "addUserName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "updateDateTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "updateStationId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "updateStationName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "updateUserId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "updateUserName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                }
+            }
+        },
+        "pubsentimentDealStation": {
+            "type": "nested",
+            "properties": {
+                "pubsentimentId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "pubDealStationId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "insId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "pubSourceType": {
+                    "type": "long"
+                },
+                "id": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "addDateTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "addStationId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "addStationName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "addUserId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "addUserName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "updateDateTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "updateStationId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "updateStationName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "updateUserId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "updateUserName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                }
+            }
+        },
+        "payload": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                }
+            },
+            "fielddata": true
+        },
+        "catalog": {
+            "type": "long"
+        },
+        "sendPersonId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "sendPersonName": {
+            "type": "text",
+            "analyzer": "ik_max_word"
+        },
+        "sendStationId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "sendStationName": {
+            "type": "text",
+            "analyzer": "ik_max_word"
+        },
+        "sendTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "timeOut": {
+            "type": "long"
+        },
+        "timeSpan": {
+            "type": "long"
+        },
+        "timeUnit": {
+            "type": "keyword"
+        },
+        "updateTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "pTaskId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "recvObjType": {
+            "type": "long"
+        },
+        "recvPersonId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "recvStationId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "recvTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "isRead": {
+            "type": "long"
+        },
+        "isHanding": {
+            "type": "long"
+        },
+        "isNotified": {
+            "type": "long"
+        },
+        "sort": {
+            "type": "long"
+        },
+        "isReport": {
+            "type": "long"
+        },
+        "pushDevice": {
+            "type": "text",
+            "analyzer": "ik_max_word"
+        },
+        "isFinished": {
+            "type": "long"
+        },
+        "finishedTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "aAddress": {
+            "type": "text",
+            "analyzer": "ik_max_word"
+        },
+        "aLatitude": {
+            "type": "float"
+        },
+        "aLongitude": {
+            "type": "float"
+        },
+        "aPerson": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                }
+            }
+        },
+        "aPersonGender": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "aPersonPhone": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                },
+                "ngram": {
+                    "type": "text",
+                    "analyzer": "ngram_analyzer",
+                    "search_analyzer": "standard"
+                }
+            }
+        },
+        "aPhone": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                },
+                "ngram": {
+                    "type": "text",
+                    "analyzer": "ngram_analyzer",
+                    "search_analyzer": "standard"
+                }
+            }
+        },
+        "casetime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "contents": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                }
+            }
+        },
+        "districtId": {
+            "type": "long"
+        },
+        "latitude2": {
+            "type": "float"
+        },
+        "longitude2": {
+            "type": "float"
+        },
+        "levels": {
+            "type": "float"
+        },
+        "origin": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "recvPerson": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                }
+            }
+        },
+        "relateId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "sn": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                },
+                "ngram": {
+                    "type": "text",
+                    "analyzer": "ngram_analyzer",
+                    "search_analyzer": "standard"
+                }
+            }
+        },
+        "summary": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                }
+            },
+            "fielddata": true
+        },
+        "alarmType": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "alarmTypeName": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "alarmCategory": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "alarmCategoryName": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "alarmTinyType": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "alarmTinyTypeName": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "aPhoneOwner": {
+            "type": "text",
+            "analyzer": "ik_max_word"
+        },
+        "dutyAreaId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "importantpartId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "importantroadId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "departNumber": {
+            "type": "text",
+            "analyzer": "ik_max_word"
+        },
+        "casePosition": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "casePositionName": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "positionType": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "positionTypeName": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "positionTinyType": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "alarmTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "createPersonId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "recvPhone": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                },
+                "ngram": {
+                    "type": "text",
+                    "analyzer": "ngram_analyzer",
+                    "search_analyzer": "standard"
+                }
+            }
+        },
+        "idCard": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                }
+            }
+        },
+        "ignoreRepeat": {
+            "type": "long"
+        },
+        "isAutoAlert": {
+            "type": "long"
+        },
+        "handleTypeCode": {
+            "type": "long"
+        },
+        "stationId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "isSensitive": {
+            "type": "boolean"
+        },
+        "planId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "sensitiveWordList": {
+            "type": "nested",
+            "properties": {
+                "id": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "addtime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "bussinesskey": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "sensitiveword": {
+                    "type": "text",
+                    "analyzer": "ik_max_word",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "sensitivewordid": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                }
+            }
+        },
+        "eventUpdateList": {
+            "type": "nested",
+            "properties": {
+                "id": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "summary": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "latitude": {
+                    "type": "float"
+                },
+                "longitude": {
+                    "type": "float"
+                },
+                "userId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "alarmId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "insId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "updateTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "address": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "updateType": {
+                    "type": "long"
+                }
+            }
+        },
+        "dealModelList": {
+            "type": "nested",
+            "properties": {
+                "eventResult": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "dealStation": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "dealPerson": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "dealTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "staionName": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "policeNames": {
+                    "type": "keyword"
+                },
+                "policedTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "reportTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                }
+            }
+        },
+        "tPaAlarmType": {
+            "type": "nested",
+            "properties": {
+                "id": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "parentId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "typeName": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                }
+            }
+        },
+        "addedTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "assignTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "policedTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "policeTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "reportTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "reportId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "reportStationId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "repeateEventID": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "bussinessKey": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "userId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "insId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "isCommit": {
+            "type": "long"
+        },
+        "isPartStationReport": {
+            "type": "long"
+        },
+        "reports": {
+            "type": "nested",
+            "properties": {
+                "id": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "content": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "reportId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "reportTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "bussinessKey": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "repId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                }
+            }
+        },
+        "event": {
+            "type": "nested",
+            "properties": {
+                "id": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "eventId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "propertyTypeId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "caseTypePropertyId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "caseTypeId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "casePartTypeId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "PartTypeId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "eventContent": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                }
+            }
+        },
+        "eventDeal": {
+            "type": "nested",
+            "properties": {
+                "id": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "addedTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "dealTime": {
+                    "type": "date",
+                    "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+                },
+                "dutyAreaId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "eventResult": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "leaderContent": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "leaderId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "bussinesskey": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "staionId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "dealId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "dutyArea": {
+                    "type": "nested",
+                    "properties": {
+                        "id": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        },
+                        "dutyareaNum": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        },
+                        "pcsId": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        },
+                        "policeId": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        },
+                        "dutyarea": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    }
+                },
+                "dealPolices": {
+                    "type": "nested",
+                    "properties": {
+                        "id": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        },
+                        "policeId": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        },
+                        "policeMapId": {
+                            "ignore_above": 256,
+                            "type": "keyword"
+                        }
+                    }
+                }
+            }
+        },
+        "caller": {
+            "type": "nested",
+            "properties": {
+                "id": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "age": {
+                    "type": "long"
+                },
+                "gender": {
+                    "type": "long"
+                },
+                "idCard": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "name": {
+                    "type": "text",
+                    "analyzer": "ik_max_word"
+                },
+                "phone": {
+                    "type": "text",
+                    "analyzer": "ik_max_word",
+                    "fields": {
+                        "standard": {
+                            "type": "text",
+                            "analyzer": "standard"
+                        },
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        },
+                        "ngram": {
+                            "type": "text",
+                            "analyzer": "ngram_analyzer",
+                            "search_analyzer": "standard"
+                        }
+                    }
+                },
+                "tableId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                }
+            }
+        },
+        "dealfilemaps": {
+            "type": "nested",
+            "properties": {
+                "id": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "fileId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "fileMapId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                }
+            }
+        },
+        "instructionId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "objId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "objType": {
+            "type": "long"
+        },
+        "taskId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "instructionType": {
+            "type": "nested",
+            "properties": {
+                "id": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "businessType": {
+                    "type": "long"
+                },
+                "typeCode": {
+                    "ignore_above": 100,
+                    "type": "keyword"
+                },
+                "typeDisplayname": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "timeUnit": {
+                    "type": "keyword"
+                },
+                "timeSpan": {
+                    "type": "long"
+                }
+            }
+        },
+        "instructionBusinesses": {
+            "type": "nested",
+            "properties": {
+                "id": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "businessFrom": {
+                    "type": "long"
+                },
+                "businessKey": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "instructionId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                }
+            }
+        },
+        "realInfos": {
+            "type": "nested",
+            "properties": {
+                "id": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "insId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "createUser": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "realUser": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                },
+                "realStationId": {
+                    "ignore_above": 256,
+                    "type": "keyword"
+                }
+            }
+        },
+        "tagName": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "tagPersonId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "tagTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "replyPersonId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "replyStationId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "replyTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "replyContent": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fielddata": true,
+            "fields": {
+                "standard": {
+                    "type": "text",
+                    "analyzer": "standard"
+                },
+                "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                }
+            }
+        },
+        "visible": {
+            "type": "long"
+        },
+        "source": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "receiverId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "personId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "taskType": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "finishUserId": {
+            "ignore_above": 256,
+            "type": "keyword"
+        },
+        "isTimeOut": {
+            "type": "long"
+        },
+        "isCancel": {
+            "type": "long"
+        },
+        "cancelTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "isFinish": {
+            "type": "long"
+        },
+        "beginTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "finishTime": {
+            "type": "date",
+            "format": "yyyy-MM-dd HH:mm:ss||yyyy-MM-dd||epoch_millis||strict_date_optional_time"
+        },
+        "type": {
+            "type": "long"
+        },
+        "repeatSn": {
+            "type": "keyword"
+        },
+        "businessRelation": {
+            "type": "join",
+            "eager_global_ordinals": true,
+            "relations": {
+                "businessinfo": ["instruction", "instruction_status", "eventtable", "feedBack", "businessTimeout"],
+                "instruction": ["instructionTask", "instructionReply", "instructionFavourite"],
+                "instructionTask": ["taskTag"],
+                "instructionReply": ["instructionReplyRead"]
+            }
+        }
+    }
+}

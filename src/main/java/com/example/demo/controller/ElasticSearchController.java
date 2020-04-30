@@ -38,4 +38,10 @@ public class ElasticSearchController {
 	public void getDeleteIndex(@RequestParam String indexName) {
 		elasticSearchService.deleteIndex(indexName);
 	}
+	
+	@PostMapping(value = "/testPutMapping")
+	@ApiOperation("测试es删除index")
+	public void getPutMapping(@RequestParam String indexName) {
+		elasticSearchService.putMapping(indexName);
+	}
 }
