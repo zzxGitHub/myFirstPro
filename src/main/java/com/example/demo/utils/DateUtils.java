@@ -4,4 +4,7 @@ public class DateUtils {
 
     private String test;
 
+
+    private String test2;
+
 }
